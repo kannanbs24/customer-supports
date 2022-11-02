@@ -13,10 +13,10 @@ namespace customer_supports.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class phase4Entities : DbContext
+    public partial class phase4Entities1 : DbContext
     {
-        public phase4Entities()
-            : base("name=phase4Entities")
+        public phase4Entities1()
+            : base("name=phase4Entities1")
         {
         }
     

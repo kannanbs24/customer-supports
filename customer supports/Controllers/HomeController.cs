@@ -1,15 +1,15 @@
-﻿using customer_supports.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using customer_supports.Models;
 namespace customer_supports.Controllers
 {
     public class HomeController : Controller
     {
-        phase4Entities db = new phase4Entities();
+        phase4Entities1 db = new phase4Entities1();
         public ActionResult Index()
         {
             return View();

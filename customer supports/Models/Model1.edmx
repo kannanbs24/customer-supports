@@ -50,7 +50,7 @@
           <Property Name="email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="passwords" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="phase4Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="phase4Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="custinfoes" EntityType="Self.custinfo" />
           <EntitySet Name="userinfoes" EntityType="Self.userinfo" />
         </EntityContainer>
@@ -59,7 +59,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="phase4ModelStoreContainer" CdmEntityContainer="phase4Entities">
+        <EntityContainerMapping StorageEntityContainer="phase4ModelStoreContainer" CdmEntityContainer="phase4Entities1">
           <EntitySetMapping Name="custinfoes">
             <EntityTypeMapping TypeName="phase4Model.custinfo">
               <MappingFragment StoreEntitySet="custinfo">

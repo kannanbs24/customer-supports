@@ -15,13 +15,21 @@ namespace customer_supports
         [TestCase]
        public void userinfo_test()       
         {
-           phase4Entities db=new phase4Entities();
-
+            phase4Entities1 db = new phase4Entities1();
             var found = db.userinfoes.ToList();
             
             Assert.AreEqual(1,found[0].userid);
-            Assert.AreEqual("kannan@123", found[2].passwords);
+           
         }
-        
+        [TestCase]
+        public void userinfo_test1()
+        {
+            phase4Entities1 db = new phase4Entities1();
+            var found = db.userinfoes.ToList();
+
+            Assert.AreEqual("kannan@123", found[1].passwords);
+
+        }
+
     }
 }
