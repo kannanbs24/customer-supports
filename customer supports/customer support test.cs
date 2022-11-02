@@ -13,13 +13,13 @@ namespace customer_supports
     public class customer_support_class
     {
         [TestCase]
-       public void userinfo_test()       
+        public void userinfo_test()
         {
             phase4Entities1 db = new phase4Entities1();
             var found = db.userinfoes.ToList();
-            
-            Assert.AreEqual(1,found[0].userid);
-           
+
+            Assert.AreEqual(1, found[0].userid);
+
         }
         [TestCase]
         public void userinfo_test1()
@@ -27,9 +27,18 @@ namespace customer_supports
             phase4Entities1 db = new phase4Entities1();
             var found = db.userinfoes.ToList();
 
-            Assert.AreEqual("kannan@123", found[1].passwords);
+            Assert.AreEqual("kannan@123", found[0].passwords.ToString());
 
         }
+        validatecs v = new validatecs();
+        [TestCase]
+        public void userinfo_test2()
+        { 
+            
+            v.check();
+        }
+
+       
 
     }
 }
